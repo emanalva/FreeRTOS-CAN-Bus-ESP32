@@ -6,7 +6,7 @@ This project implements a real-time vehicle sensor network using two ESP32 micro
 - Real-time data acquisition from multiple sensors:
   - **Ultrasonic sensor (HC-SR04)**: Simulates proximity detection (e.g., parking sensor).
   - **Temperature & humidity sensor (DHT11)**: Simulates cabin environmental monitoring.
-  - **Photoresistor**: Acts as an ignition button to start or stop the vehicle system.
+  - **Photoresistor (5528)**: Acts as an ignition button to start or stop the vehicle system.
 - CAN bus communication between two ESP32s.
 - FreeRTOS task scheduling and prioritization.
 
@@ -20,7 +20,7 @@ This project implements a real-time vehicle sensor network using two ESP32 micro
   - LED
 
 ## Folder Structure
-- **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication.
+- **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication in '.ino' files.
 - **/hardware**: Wiring diagrams and schematics.
 - **/docs**: Documentation on system architecture and task breakdown.
 
