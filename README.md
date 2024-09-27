@@ -20,7 +20,7 @@ This project implements a real-time vehicle sensor network using two ESP32 micro
   - LED
 
 ## Folder Structure
-- **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication in '.ino' files.
+- **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication in `.ino` files.
 - **/hardware**: Wiring diagrams and schematics.
 - **/docs**: Documentation on system architecture and task breakdown.
 
