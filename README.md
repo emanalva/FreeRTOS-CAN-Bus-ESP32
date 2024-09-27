@@ -18,7 +18,7 @@ This project implements a real-time vehicle sensor network using two ESP32 micro
   - Ultrasonic sensor (HC-SR04)
   - Temperature & humidity sensor (DHT11)
   - Photoresistor (5528)
-  - Touch sensor (TTP223B)
+  - LED
 
 ## Folder Structure
 - **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication.
