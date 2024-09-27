@@ -1,8 +1,8 @@
-# FreeRTOS CAN Bus ESP32
+# 🚗 FreeRTOS CAN Bus Autonomous Vehicle System
 
-This project implements a real-time vehicle sensor network using two ESP32 microcontrollers running FreeRTOS. The ESP32s communicate via CAN bus, simulating real-time data transmission in an automotive system.
+This project simulates a real-time sensor network for an autonomous vehicle using two ESP32 microcontrollers running FreeRTOS. The ESP32s communicate via CAN bus, mimicking real-time data transmission between different vehicle components.
 
-## Features
+## 🚀 Features
 - Real-time data acquisition from multiple sensors:
   - **Ultrasonic sensor (HC-SR04)**: Simulates proximity detection (e.g., parking sensor).
   - **Temperature & humidity sensor (DHT11)**: Simulates cabin environmental monitoring.
@@ -11,7 +11,7 @@ This project implements a real-time vehicle sensor network using two ESP32 micro
 - CAN bus communication between two ESP32s.
 - FreeRTOS task scheduling and prioritization.
 
-## Hardware Used
+## 🛠️ Hardware Used
 - **ESP32** x 2
 - **MCP2515 CAN Bus modules** x 2
 - **Sensors**:
@@ -21,10 +21,15 @@ This project implements a real-time vehicle sensor network using two ESP32 micro
   - Touch sensor (TTP223)
   - LED
 
-## Folder Structure
+## 📂 Folder Structure
 - **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication in `.ino` files.
 - **/hardware**: Wiring diagrams and schematics.
 - **/docs**: Documentation on system architecture and task breakdown.
 
-## Getting Started
+## 🚧 Future Expansion
+This project is designed to support the integration of additional ESP32s. A future extension will incorporate a **third ESP32** to control a **stepper motor** and a **servo motor**, mimicking moving mechanical parts in an autonomous vehicle system. This addition will further enhance the simulation of real-time mechanical actions in an autonomous vehicle using CAN bus communication.
+
+## 🏁 Getting Started
 To replicate this project, ensure you have the necessary hardware components and follow the wiring diagrams in the `/hardware/` folder. Use PlatformIO or Arduino IDE for ESP32 programming.
+
+© 2024 Emanuel Alvarez
