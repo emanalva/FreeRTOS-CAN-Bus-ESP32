@@ -5,7 +5,7 @@ This project simulates a real-time sensor network for an autonomous vehicle usin
 ## 🚀 Features
 - Real-time data acquisition from multiple sensors:
   - **Ultrasonic sensor (HC-SR04)**: Simulates proximity detection (e.g., parking sensor).
-  - **Temperature & humidity sensor (DHT11)**: Simulates cabin environmental monitoring.
+  - **Temperature & humidity sensor (DHT11)**: Simulates cabin temperature monitoring.
   - **Photoresistor (5528)**: Simulates automatic headlight control based on ambient light conditions.
   - **Touch sensor (TTP223)**: Acts as an ignition button to start or stop the vehicle system.
 - CAN bus communication between two ESP32s.
@@ -17,9 +17,9 @@ This project simulates a real-time sensor network for an autonomous vehicle usin
 - **Sensors**:
   - Ultrasonic sensor (HC-SR04)
   - Temperature & humidity sensor (DHT11)
-  - Photoresistor (5528)
+  - Photoresistor (5528) (+ 10kΩ resistor)
   - Touch sensor (TTP223)
-  - LED
+  - LED (+ 220Ω resistor)
 
 ## 📂 Folder Structure
 - **/src**: Contains the main code for FreeRTOS tasks and CAN bus communication in `.ino` files.
@@ -27,9 +27,10 @@ This project simulates a real-time sensor network for an autonomous vehicle usin
 - **/docs**: Documentation on system architecture and task breakdown.
 
 ## 🚧 Future Expansion
-This project is designed to support the integration of additional ESP32s. A future extension will incorporate a **third ESP32** to control a **stepper motor** and a **servo motor**, mimicking moving mechanical parts in an autonomous vehicle system. This addition will further enhance the simulation of real-time mechanical actions in an autonomous vehicle using CAN bus communication.
+- This project is designed to support the integration of additional ESP32s. A future extension can incorporate a **third ESP32** to control a **stepper motor** and a **servo motor**, mimicking moving mechanical parts in an autonomous vehicle system. This addition will further enhance the simulation of real-time mechanical actions in an autonomous vehicle using CAN bus communication.
+- **Bare metal** implementation of FreeRTOS tasks.
 
 ## 🏁 Getting Started
-To replicate this project, ensure you have the necessary hardware components and follow the wiring diagrams in the `/hardware/` folder. Use PlatformIO or Arduino IDE for ESP32 programming.
+To replicate this project, ensure you have the necessary hardware components and follow the wiring diagrams in the `/hardware/` folder. Use PlatformIO or Arduino IDE for the ESP32 programming.
 
 © 2024 Emanuel Alvarez
