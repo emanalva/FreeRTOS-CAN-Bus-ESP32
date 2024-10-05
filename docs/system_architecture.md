@@ -16,8 +16,9 @@ This project simulates a basic autonomous vehicle system using two ESP32 microco
 
 ## CAN Bus Communication
 - The two ESP32s communicate using CAN bus, allowing real-time data transfer between the hubs.
+- CAN ID **0x037** is used for acknowledgment messages.
+- CAN ID **0x036** is used for sending system on/off commands from the Controller Hub to the Sensor Hub.
 - CAN ID **0x100** is used for sensor data transfer from the Sensor Hub to the Controller Hub.
-- CAN ID **0x200** is used for sending system on/off commands from the Controller Hub to the Sensor Hub.
 
 ## FreeRTOS Task Scheduling
-- Both ESP32s use FreeRTOS to manage tasks such as reading sensor data, handling system state changes, and updating the LCD display. Each task is scheduled to run at a specific interval to ensure smooth operation.
+- Both ESP32s use FreeRTOS to manage tasks such as reading sensor data, handling system state changes, and updating the LCD display. Each task is scheduled to run at a specific time for smoother operation.
