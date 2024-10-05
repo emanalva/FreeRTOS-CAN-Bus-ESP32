@@ -7,13 +7,19 @@
 - **2x MCP2515 CAN Bus Modules**
 - **1x DHT11 Temperature Sensor**
 - **1x Ultrasonic Sensor (HC-SR04)**
-- **1x Photoresistor**
-- **1x LED**
-- **1x Touch Sensor**
-- **1x 16x2 LCD Display (I2C or parallel)**
+- **1x Photoresistor (5528) + 10kΩ Resistor**
+- **1x LED + 220Ω Resistor**
+- **1x Touch Sensor (TTP223)**
+- **1x 16x2 LCD Display (parallel)**
 
 ### Software:
-- Arduino IDE with ESP32 and CAN libraries installed.
+- Arduino IDE with ESP32 package
+- Libraries:
+  - MCP2515 CAN library
+  - DHT library
+  - LiquidCrystal library
+  - FreeRTOS library 
+  - SPI library
 
 ## Steps:
 
@@ -21,7 +27,7 @@
    - Follow the wiring diagrams in the `/hardware` folder for the correct connections between sensors, CAN bus modules, and the ESP32s.
 
 2. **Flashing the Code**:
-   - Upload `setup_hub.ino` to the ESP32 that acts as the Sensor Hub.
+   - Upload `sensor_hub.ino` to the ESP32 that acts as the Sensor Hub.
    - Upload `controller_hub.ino` to the ESP32 that acts as the Controller Hub.
 
 3. **Testing**:
